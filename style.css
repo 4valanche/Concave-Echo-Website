@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Fontawesome webfont';
+  src: url('https://uploads-ssl.webflow.com/611d1a6134ff344b414d1202/611d1a6134ff341f4f4d121a_fontawesome-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Productsans';
+  src: url('https://uploads-ssl.webflow.com/611d1a6134ff344b414d1202/61f6d0ad5259c0791a7012f4_ProductSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Sharp;
+  src: url('https://uploads-ssl.webflow.com/611d1a6134ff344b414d1202/61c8b8013f1b7adedcd3354d_samsungsharpsans-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --cc-violet: #6267b5;
+  --cc-blue: #58b0df;
+  --cc-cyan: #50e6ff;
+  --transition-setting: all 0.2s ease-in-out;
+  --toc-font: 1rem;
+}
+
+body {
+  background: #000 url("https://concave.lol/images/cave_bg.jpeg");
+  background-attachment: fixed;
+}
+
+/* navbar */
+/* transparency + blur */
+.super-navbar{
+  background-color: rgba(0,0,0, 0.15) !important;
+  backdrop-filter: blur(5px);
+  
+}
+/* set only logo to clickable vs. entire div */
+.notion-link.super-navbar__logo {
+  pointer-events: none;
+}
+.super-navbar__logo-image {
+  pointer-events: all;
+}
+
+/* modify cta button*/
+.super-navbar__cta{
+  background-size: 150% !important;
+  background: rgb(98,103,181);
+  background: linear-gradient(to right, var(--cc-violet) 15%, var(--cc-blue) 69%, var(--cc-cyan) 100%) !important;
+  border-radius: 5px;
+}
+
+.super-navbar__cta:hover{
+  background-size: 100% !important;
+  transition: var(--transition-setting) !important;
+  transform: scale(105%);
+  opacity: 1;
+}
+
+@media (max-width: 424px) {
+  .notion-link.super-navbar__logo {
+    transform: scale(70%) !important;
+    display: contents;
+  }
+  
+  .super-navbar__cta{
+    transform: scale(70%) !important;
+  }
+  .super-navbar__cta:hover {
+    transition: var(--transition-setting) !important;
+    transform: scale(75%) !important;
+  }
+
+}
+
+/* navbar end*/
+.notion-heading {
+  font-family: Sharp, 'sans-serif';
+}
+
+/* set heading size based on screen width */
+@media (min-width: 801px) {
+  h1.notion-heading, .notion-header__title {
+    font-family: Sharp, 'sans-serif';
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+
+/* callout borders */
+.notion-callout {
+  border-radius: 5px;
+}
+
+/* HIDE ALL TOGGLE BLOCKS WITH BROWN BACKGROUND*/
+.notion-toggle.bg-brown {
+  display: none !important;
+}
+
+
+/* key frames */
+
+/* keyframes end */
+
+/* This stuff doesn't do anything? */
+/* ==================================== */
+/* Footer */
+/*#block-290e02186b5c497a8bb7d5600b0f14e0 {*/
+/*  display: none;*/
+/*}*/
+
+
+/*#block-9abb56b55918405391a3e10250423efe {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*#block-43fc908617b64f07b705b5947a1e57e8 {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*#block-7f10517e79314a82a55eee3ca050c2a6{*/
+/*  font-size: 1.875rem;*/
+/*}*/
+
+/* ==================================== */
